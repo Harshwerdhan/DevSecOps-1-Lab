@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service - Flask App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin-right: 10px;
+            display: inline-block;
+            border-radius: 3px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .service-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #333;
+        }
+        .service-card h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .service-card p {
+            color: #666;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/service">Service</a>
+    </nav>
+    <div class="container">
+        <h1>Our Services</h1>
+        <p>We offer a variety of services to meet your needs:</p>
+        <div class="services">
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>Build modern, responsive web applications using Flask and other frameworks.</p>
+            </div>
+            <div class="service-card">
+                <h3>API Design</h3>
+                <p>Create RESTful APIs with proper documentation and testing.</p>
+            </div>
+            <div class="service-card">
+                <h3>Database Design</h3>
+                <p>Efficient database schema design and optimization.</p>
+            </div>
+            <div class="service-card">
+                <h3>Consulting</h3>
+                <p>Expert advice on architecture and best practices.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
